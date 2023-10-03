@@ -9,7 +9,6 @@ return new class extends Migration
     /**
     * Run the migration
     */
-    //Schema for the "courses" table
     public function up(): void
     {
         Schema::create('courses', function (Blueprint $table) {
@@ -30,7 +29,7 @@ return new class extends Migration
     /**
      * Reverse the migrations.
      */
-    piblic function down(): void
+    public function down(): void
     {
         Schema::dropIfExists('courses_and_instructors_table');
     }
